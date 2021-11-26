@@ -15,7 +15,13 @@
  *                from calling the function
  */
 export const repeat = (fn, n, ...params) => {
-
+const toReturn = [];
+let i = 0;
+while (i<n) {
+    toReturn[i] = fn(params);
+    i++;
+}
+return toReturn;
 };
 
 
