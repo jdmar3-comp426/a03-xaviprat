@@ -71,7 +71,7 @@ let sum = getSum(array);
 let standDev = Math.sqrt(varia);
 
 
-return "{length: "+len+", sum: "+sum+", mean: "+mean+", median: "+ median+", min: "+min+", max: " +max+ ", variance: " + varia+ ", standard_deviation: "+standDev+"}"
+return "{ length: "+len+", sum: "+sum+", mean: "+mean+", median: "+ median+", min: "+min+", max: " +max+ ", variance: " + varia+ ", standard_deviation: "+standDev+" }"
 
 
 
