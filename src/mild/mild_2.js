@@ -53,9 +53,9 @@ return stringArray;
  obj now does not contain the `password` field
  */
 export function removeKey(object, key) {
-console.log(object.key);
-delete object.key;
-console.log(object.key);
+console.log(object.password);
+delete object[key];
+console.log(object.password);
 return;
 }
 
@@ -77,7 +77,7 @@ return;
  */
 export function removeKeyNonDestructive(object, key) {
 const myObj = [...object];
-delete myObj.key;
+delete myObj[key];
 return myObj;
 }
 
