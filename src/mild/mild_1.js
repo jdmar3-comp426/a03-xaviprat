@@ -45,7 +45,16 @@ return array;
  * and https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
  */
 export function maxAndMin(numbers) {
-
+let len = numbers.length;
+let min = numbers[0];
+let max = numbers[0];
+let i = 1;
+while (i<=len) {
+    if (numbers[i] > max) {max = numbers[i]}
+    if (numbers[i] < min) {min = numbers[i]}
+    i++;
+}
+return "min: " + min + ", max: " + max;
 }
 
 /**
