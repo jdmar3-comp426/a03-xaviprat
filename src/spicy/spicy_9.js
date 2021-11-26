@@ -178,7 +178,7 @@ export const someEven = (arr, test) => {
  *       -->  { pass: [1, 5, 31], fail: [90] }
  */
 export const filter = (arr, test) => {
-const toReturn = {fail: [], pass: []};
+const toReturn = {pass: [], fail: []};
 let len = arr.length;
 let i = 0;
 while (i<len) {
