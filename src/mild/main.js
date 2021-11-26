@@ -6,5 +6,7 @@ console.log(getIncreasingArray(3,6));
 console.log(maxAndMin([1,3,5,0]));
 console.log(countArray([1,2,3,1,3]));
 */
-console.log(identifyVariable("hello"));
+console.log(identifyVariable(true));
+console.log(identifyArray(["some", true, 7]));
+
 
