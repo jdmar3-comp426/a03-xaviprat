@@ -110,14 +110,15 @@ return tenTimes(50);
 export const everyEven = (arr, test) => {
 let len = arr.length;
 let i = 0;
+let toReturn = false;
 while (i<len) {
     toReturn = test(arr[i]);
     if (toReturn == true) {
-        return true;
+        return toReturn;
     }
     i+=2;
 }
-return false;
+return toReturn;
 };
 
 
