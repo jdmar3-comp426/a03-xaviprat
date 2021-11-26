@@ -68,5 +68,18 @@ return "{ max: " + max + ", min: " + min + " }";
  *
  */
 export function countArray(array) {
-
+let len = array.length;
+let o = new Object();
+let check = array;
+let i;
+let j;
+for (i=0; i<= len; i++) {
+    for (j=0; j<= len; j++) {
+        if (array[i] == check[j]) {
+            o.array[i] += 1;
+        }
+        o.array[i] = 1;
+    }
+}
+return o.keys;
 }
