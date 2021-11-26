@@ -54,6 +54,7 @@ return stringArray;
  */
 export function removeKey(object, key) {
 delete object.key;
+return;
 }
 
 /**

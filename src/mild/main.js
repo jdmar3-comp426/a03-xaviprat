@@ -8,5 +8,12 @@ console.log(countArray([1,2,3,1,3]));
 */
 console.log(identifyVariable(true));
 console.log(identifyArray(["some", true, 7]));
+var person = {
+    firstName: "John",
+    password: "hey",
+}
+console.log(person.password);
+removeKey(person, password);
+console.log(person.password);
 
 
