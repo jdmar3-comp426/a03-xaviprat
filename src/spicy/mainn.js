@@ -1,2 +1,3 @@
-import { repeat } from "./spicy_9.js";
+import { repeat, repeatDemo } from "./spicy_9.js";
 
+console.log(repeatDemo);
