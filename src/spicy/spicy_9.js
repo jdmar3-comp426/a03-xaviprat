@@ -30,9 +30,17 @@ return toReturn;
  *   10 times.
  */
 export const repeatDemo = () => {
-let i=0;
-while (i<10) {
-    console.log("Hello, world!")
+    console.log("Hello, world!");
+    console.log("Hello, world!");
+    console.log("Hello, world!");
+    console.log("Hello, world!");
+    console.log("Hello, world!");
+    console.log("Hello, world!");
+    console.log("Hello, world!");
+    console.log("Hello, world!");
+    console.log("Hello, world!");
+    console.log("Hello, world!");
+   
 }
 };
 
