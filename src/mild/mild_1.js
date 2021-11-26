@@ -54,7 +54,7 @@ while (i<=len) {
     if (numbers[i] < min) {min = numbers[i]}
     i++;
 }
-return "min: " + min + ", max: " + max;
+return "max: " + max + ", min: " + min;
 }
 
 /**
