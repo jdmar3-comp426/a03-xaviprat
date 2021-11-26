@@ -61,6 +61,20 @@ return array[middle];
  }
  */
 export function getStatistics(array) {
+let len = array.length;
+let median = getMedian(array);
+let min = array[0];
+let max = array[len-1];
+let mean = getSum(array)/len;
+let varia = variance(array, mean);
+let sum = getSum(array);
+let standDev = Math.sqrt(varia);
+
+
+return "{min: "+min+", median: "+median+", max: "+max+", variance: "+ varia+", mean: "+mean+", length: " +len+ ", sum: " + sum+ ", standard_deviation: "+standDev+"}"
+
+
+
 
 }
 

@@ -1,3 +1,4 @@
-import { getSum, getMedian } from "./medium_1.js";
+import { getSum, getMedian, getStatistics } from "./medium_1.js";
+import {variance} from "./data/stats_helpers.js"
 
-console.log(getMedian([1,2,3,4,3,]));
+console.log(getStatistics([100,200,350,4131,3,]));
