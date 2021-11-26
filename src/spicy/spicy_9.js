@@ -198,7 +198,16 @@ return toReturn;
  *   odd numbers. Use the "everyEven" function in this function.
  */
 export const allEvensAreOdd = (arr) => {
-
+let len = arr.length;
+let toReturn = true;
+let i = 0;
+while (i<len) {
+    if (arr[i] % 2 != 1) {
+        return false;
+    }
+    i += 2;
+}
+return toReturn;
 };
 
 
