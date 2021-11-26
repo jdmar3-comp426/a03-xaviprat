@@ -18,7 +18,7 @@ export const repeat = (fn, n, ...params) => {
 const toReturn = [];
 let i = 0;
 while (i<n) {
-    toReturn[i] = fn(params);
+    toReturn[i] = fn(params[i]);
     i++;
 }
 return toReturn;
