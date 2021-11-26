@@ -217,7 +217,16 @@ return toReturn;
  *   array is an odd number. Use the "someEven" function in this function.
  */
 export const anEvenIsOdd = (arr) => {
-
+    let len = arr.length;
+    let toReturn = false;
+    let i = 0;
+    while (i<len) {
+        if (arr[i] % 2 != 1) {
+            return true;
+        }
+        i += 2;
+    }
+    return toReturn;
 };
 
 
