@@ -31,7 +31,7 @@ return sum;
 export function getMedian(array) {
 array.sort(function(a,b){return a - b});
 const middle = Math.floor(array.length/2)
-console.log(array);
+
 
 if (array.length % 2 === 0) {
     return (array[middle - 1] + array[middle]) / 2;
