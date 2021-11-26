@@ -12,8 +12,8 @@ var person = {
     firstName: "John",
     password: "hey",
 }
-console.log(person.password);
-removeKey(person, password);
-console.log(person.password);
+
+removeKey(person, "password");
+
 
 
