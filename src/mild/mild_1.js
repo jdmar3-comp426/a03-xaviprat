@@ -28,7 +28,13 @@ return a+" + "+ b + " = "+ c;
 export function getIncreasingArray(startNumber, endNumber) {
 let i = 0;
 let x = endNumber - startNumber;
-
+let array = [];
+array.length = x+1;
+while (i<=x){
+    array[i] = startNumber+i;
+    i++;
+}
+return array;
 }
 
 /**
