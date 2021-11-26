@@ -9,8 +9,10 @@
  * see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
  */
 export function sumToString(a, b) {
-
+c = a+b;
+return a+" + "+ b + " = "+ c;
 }
+console.log(sumToString(3,4));
 
 
 /**
