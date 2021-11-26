@@ -142,7 +142,17 @@ return toReturn;
  *    someEven([0, 0, 0, 0, 0], x => x === 0)  <--  returns true
  */
 export const someEven = (arr, test) => {
-
+    let len = arr.length;
+    let i = 0;
+    let toReturn = false;
+    while (i<len) {
+        toReturn = test(arr[i]);
+        if (toReturn == true) {
+            return toReturn;
+        }
+        i+=2;
+    }
+    return toReturn;
 };
 
 
