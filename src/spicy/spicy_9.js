@@ -184,8 +184,8 @@ let i = 0;
 while (i<len) {
 if (test(arr[i]) == true) {
     toReturn.pass[toReturn.pass.length] = arr[i];
-}
-toReturn.fail[toReturn.fail.length] = arr[i];
+} else {toReturn.fail[toReturn.fail.length] = arr[i];}
+
     i++;
 }
 return toReturn;
