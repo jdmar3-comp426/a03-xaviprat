@@ -26,7 +26,14 @@ return "{ type: '" + x + "', value: " + variable + " }";
 
  */
 export function identifyArray(array) {
-
+let len = array.len;
+let stringArray = [];
+let i = 0;
+while (i<=len) {
+   stringArray[i] = identifyArray(array[i]);
+   i++;
+}
+return stringArray;
 }
 
 /**
