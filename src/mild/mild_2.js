@@ -8,7 +8,7 @@
 export function identifyVariable(variable) {
 let x;
 x = typeof(variable);
-return "{ type: " + x + ", value: " + variable + " }";
+return "{ type: '" + x + "', value: " + variable + " }";
 }
 
 
