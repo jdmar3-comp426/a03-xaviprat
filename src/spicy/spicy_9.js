@@ -108,7 +108,16 @@ return tenTimes(50);
  *    everyEven([1, 1, 0, 1, 1], x => x === 1)  <--  returns false
  */
 export const everyEven = (arr, test) => {
-
+let len = arr.length;
+let i = 0;
+while (i<len) {
+    toReturn = test(arr[i]);
+    if (toReturn == true) {
+        return true;
+    }
+    i+=2;
+}
+return false;
 };
 
 
