@@ -26,14 +26,12 @@ return "{ type: '" + x + "', value: '" + variable + "' }";
 
  */
 export function identifyArray(array) {
-let len = array.length;
 let stringArray = [];
-let i = 0;
-while (i<len) {
-   
+
+for (var i=0; i<array.length;i++) {
    stringArray[i] = identifyVariable(array[i]);
-   i++;
 }
+
 return stringArray;
 }
 
