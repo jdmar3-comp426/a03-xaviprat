@@ -12,7 +12,7 @@ var person = {
     password: "hey",
 }
 
-let myObj = removeKeys(person, "password");
+let myObj = removeKey(person, "password");
 console.log(myObj.password);
 console.log(myObj.firstName);
 
