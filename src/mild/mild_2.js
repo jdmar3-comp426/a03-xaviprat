@@ -53,10 +53,7 @@ return stringArray;
  obj now does not contain the `password` field
  */
 export function removeKey(object, key) {
-console.log(object.password);
 delete object[key];
-console.log(object.password);
-return;
 }
 
 /**
