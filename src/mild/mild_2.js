@@ -101,4 +101,13 @@ return myObj
  */
 export function removeKeys(object, keyList) {
 
+   let i = 0;
+   let len = keyLisy.length;
+   let myObj = Object.assign({},object);
+   while (i<len) {
+      myObj= removeKeyNonDestructive(object, keyList[i]);
+      i++;
+   }
+   return myObj;
+
 }
