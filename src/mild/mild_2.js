@@ -27,9 +27,10 @@ return "{ type: '" + x + "', value: '" + variable + "' }";
  */
 export function identifyArray(array) {
 let len = array.length;
-const stringArray = [];
+let stringArray = [];
 let i = 0;
 while (i<len) {
+   
    stringArray[i] = identifyVariable(array[i]);
    i++;
 }
