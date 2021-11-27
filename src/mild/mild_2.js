@@ -73,9 +73,9 @@ delete object[key];
  If only `removeKeyNonDestructive` was called, nothing would have changed.
  */
 export function removeKeyNonDestructive(object, key) {
-myObj = [...object];
-delete myObj[key];
-return myObj;
+let myObj = Object.assign({}, object)
+delete myObj[key]
+return myObj
 }
 
 /**
