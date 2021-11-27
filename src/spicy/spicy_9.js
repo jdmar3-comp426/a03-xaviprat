@@ -16,10 +16,8 @@
  */
 export const repeat = (fn, n, ...params) => {
 let toReturn = [];
-let i = 0;
-while (i<n) {
+for (let i=0; i<n; i++) {
     toReturn[i] = fn(params);
-    i++;
 }
 return toReturn;
 };
