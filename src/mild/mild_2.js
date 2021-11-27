@@ -102,7 +102,7 @@ return myObj
 export function removeKeys(object, keyList) {
 
    let i = 0;
-   let len = keyLisy.length;
+   let len = keyList.length;
    let myObj = Object.assign({},object);
    while (i<len) {
       removeKey(myObj, keyList[i]);
