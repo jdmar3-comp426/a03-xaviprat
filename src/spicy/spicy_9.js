@@ -57,7 +57,9 @@ export const repeatDemo = () => {
  *   product of num1 and num2.
  */
 export const multiplyBy = (num1) => {
-return multiplyBy2(num1, 2);
+return (num2) => {
+    return num2 * num1;
+};
 };
 
 export const multiplyBy2 = (num1, num2) => {
